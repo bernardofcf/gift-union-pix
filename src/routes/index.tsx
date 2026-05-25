@@ -2,6 +2,10 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import { Heart } from "lucide-react";
 import heroImage from "@/assets/hero.jpg";
+import couple1 from "@/assets/couple-1.jpg";
+import couple2 from "@/assets/couple-2.jpg";
+import couple3 from "@/assets/couple-3.jpg";
+import couple4 from "@/assets/couple-4.jpg";
 import { gifts, type GiftItem } from "@/lib/gifts";
 import { GiftDialog } from "@/components/GiftDialog";
 
@@ -64,6 +68,34 @@ function Index() {
         </div>
       </header>
 
+      {/* Couple Gallery */}
+      <section className="mx-auto max-w-6xl px-6 pb-24">
+        <div className="text-center mb-16">
+          <p className="text-sm uppercase tracking-[0.3em] text-sage-deep/70">Nós dois</p>
+          <h2 className="mt-3 font-display text-4xl md:text-5xl text-sage-deep">
+            Nossa História
+          </h2>
+        </div>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+          <div className="md:row-span-2 overflow-hidden rounded-2xl aspect-[3/4] md:aspect-auto">
+            <img src={couple1} alt="Maria Theresa e Rodrigo no jardim" loading="lazy" width={1024} height={1280}
+              className="h-full w-full object-cover transition-transform duration-700 hover:scale-105" />
+          </div>
+          <div className="col-span-2 overflow-hidden rounded-2xl aspect-[5/4]">
+            <img src={couple2} alt="O casal abraçado ao pôr do sol" loading="lazy" width={1280} height={1024}
+              className="h-full w-full object-cover transition-transform duration-700 hover:scale-105" />
+          </div>
+          <div className="overflow-hidden rounded-2xl aspect-square">
+            <img src={couple3} alt="Mãos com aliança e eucalipto" loading="lazy" width={1024} height={1024}
+              className="h-full w-full object-cover transition-transform duration-700 hover:scale-105" />
+          </div>
+          <div className="col-span-2 md:col-span-3 overflow-hidden rounded-2xl aspect-[16/9]">
+            <img src={couple4} alt="Maria Theresa e Rodrigo sorrindo" loading="lazy" width={1024} height={1280}
+              className="h-full w-full object-cover transition-transform duration-700 hover:scale-105" />
+          </div>
+        </div>
+      </section>
+
       {/* Gifts */}
       <section className="mx-auto max-w-6xl px-6 pb-24">
         <div className="text-center mb-16">
@@ -81,25 +113,34 @@ function Index() {
             <button
               key={gift.id}
               onClick={() => setSelected(gift)}
-              className="group relative overflow-hidden rounded-2xl border border-border bg-card p-8 text-left transition-all duration-500 hover:-translate-y-1 hover:shadow-[var(--shadow-soft)] hover:border-accent"
+              className="group relative overflow-hidden rounded-2xl border border-border bg-card text-left transition-all duration-500 hover:-translate-y-1 hover:shadow-[var(--shadow-soft)] hover:border-accent"
             >
-              <div className="flex items-start justify-between">
-                <div className="flex h-14 w-14 items-center justify-center rounded-full bg-accent/30 transition-colors group-hover:bg-accent/60">
-                  <gift.Icon className="h-7 w-7 text-primary" />
-                </div>
-                <span className="font-display text-2xl text-primary">
-                  R$ {gift.amount}
-                </span>
+              <div className="aspect-[4/3] overflow-hidden bg-accent/20">
+                <img
+                  src={gift.image}
+                  alt={gift.name}
+                  loading="lazy"
+                  width={768}
+                  height={768}
+                  className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                />
               </div>
-              <h3 className="mt-6 font-display text-2xl text-sage-deep">
-                {gift.name}
-              </h3>
-              <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
-                {gift.description}
-              </p>
-              <p className="mt-6 text-xs uppercase tracking-[0.2em] text-sage-deep/60 group-hover:text-sage-deep transition-colors">
-                Presentear →
-              </p>
+              <div className="p-6">
+                <div className="flex items-baseline justify-between gap-3">
+                  <h3 className="font-display text-2xl text-sage-deep">
+                    {gift.name}
+                  </h3>
+                  <span className="font-display text-xl text-primary whitespace-nowrap">
+                    R$ {gift.amount}
+                  </span>
+                </div>
+                <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
+                  {gift.description}
+                </p>
+                <p className="mt-5 text-xs uppercase tracking-[0.2em] text-sage-deep/60 group-hover:text-sage-deep transition-colors">
+                  Presentear →
+                </p>
+              </div>
             </button>
           ))}
         </div>

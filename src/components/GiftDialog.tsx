@@ -42,8 +42,8 @@ export function GiftDialog({ gift, onClose }: Props) {
         {gift && (
           <>
             <DialogHeader className="text-center sm:text-center">
-              <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-accent/40">
-                <gift.Icon className="h-8 w-8 text-primary" />
+              <div className="mx-auto mb-4 h-24 w-24 overflow-hidden rounded-full border border-border">
+                <img src={gift.image} alt={gift.name} width={96} height={96} className="h-full w-full object-cover" />
               </div>
               <DialogTitle className="font-display text-3xl">{gift.name}</DialogTitle>
               <DialogDescription className="text-base">
