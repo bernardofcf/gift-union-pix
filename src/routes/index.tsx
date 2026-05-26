@@ -56,10 +56,6 @@ function Index() {
             <span className="block italic text-4xl md:text-5xl my-3 text-accent-foreground/70">&</span>
             Rodrigo
           </h1>
-          <p className="mx-auto mt-8 max-w-xl text-lg text-muted-foreground leading-relaxed">
-            Sua presença em nosso grande dia já é o presente mais precioso.
-            Mas, se desejar contribuir, preparamos com carinho a lista abaixo.
-          </p>
           <div className="mt-10 inline-flex items-center gap-2 text-sage-deep">
             <span className="h-px w-12 bg-sage-deep/40" />
             <Heart className="h-4 w-4 fill-current" />
@@ -67,6 +63,34 @@ function Index() {
           </div>
         </div>
       </header>
+
+      {/* Mensagem inicial */}
+      <section className="mx-auto max-w-3xl px-6 pb-24 text-center">
+        <p className="text-sm uppercase tracking-[0.3em] text-sage-deep/70">Boas-vindas</p>
+        <h2 className="mt-3 font-display text-4xl md:text-5xl text-sage-deep">
+          Um novo capítulo
+        </h2>
+        <div className="mt-8 space-y-5 text-base md:text-lg leading-relaxed text-foreground/80">
+          <p>
+            Com a graça de Deus e o coração cheio de amor, iniciamos um novo capítulo das nossas vidas.
+          </p>
+          <p>
+            Acreditamos que nada acontece por acaso e que cada detalhe deste momento foi preparado pelas mãos de Deus.
+            Por isso, ter você conosco torna tudo ainda mais especial.
+          </p>
+          <p>
+            Cada convidado foi escolhido a dedo, com muito carinho, porque faz parte da nossa história,
+            das nossas memórias e daquilo que levaremos para sempre em nossos corações.
+          </p>
+          <p>
+            Mais do que celebrar um casamento, queremos celebrar o amor, a união e as bênçãos que Deus
+            derrama sobre nossas vidas ao lado das pessoas que amamos.
+          </p>
+          <p className="font-display text-2xl md:text-3xl text-sage-deep pt-2">
+            Será uma alegria imensa compartilhar esse dia tão único com vocês!
+          </p>
+        </div>
+      </section>
 
       {/* Couple Gallery */}
       <section className="mx-auto max-w-6xl px-6 pb-24">
@@ -93,6 +117,30 @@ function Index() {
             <img src={couple4} alt="Maria Theresa e Rodrigo sorrindo" loading="lazy" width={1024} height={1280}
               className="h-full w-full object-cover transition-transform duration-700 hover:scale-105" />
           </div>
+        </div>
+      </section>
+
+      {/* Texto antes da lista */}
+      <section className="mx-auto max-w-3xl px-6 pb-16 text-center">
+        <p className="text-sm uppercase tracking-[0.3em] text-sage-deep/70">Nosso lar</p>
+        <h2 className="mt-3 font-display text-4xl md:text-5xl text-sage-deep">
+          Construindo nosso cantinho
+        </h2>
+        <div className="mt-8 space-y-5 text-base md:text-lg leading-relaxed text-foreground/80">
+          <p>
+            Nossa casa está sendo construída com muito amor, cuidado e carinho, exatamente da forma como sempre sonhamos.
+          </p>
+          <p>
+            Cada detalhe foi pensado para transformar esse novo começo em um lar cheio de aconchego, paz e felicidade.
+          </p>
+          <p>
+            Os presentes disponíveis em nossa lista são simbólicos e os valores serão convertidos em Pix,
+            contribuindo para realizarmos esse sonho e montarmos nosso cantinho com todo amor.
+          </p>
+          <p>
+            Agradecemos imensamente por fazer parte desse momento tão especial. Sua presença, carinho e contribuição
+            serão lembrados com muito amor em nossa nova história.
+          </p>
         </div>
       </section>
 
@@ -127,10 +175,10 @@ function Index() {
               </div>
               <div className="p-6">
                 <div className="flex items-baseline justify-between gap-3">
-                  <h3 className="font-display text-2xl text-sage-deep">
+                  <h3 className="font-display text-xl text-sage-deep leading-tight">
                     {gift.name}
                   </h3>
-                  <span className="font-display text-xl text-primary whitespace-nowrap">
+                  <span className="font-display text-lg text-primary whitespace-nowrap">
                     R$ {gift.amount}
                   </span>
                 </div>
