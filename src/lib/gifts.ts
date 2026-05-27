@@ -21,7 +21,6 @@ export const gifts: GiftItem[] = [
   { id: "panelas-tramontina-solar", name: "Jogo de Panelas Tramontina Solar 4 Peças", description: "Aço inox com fundo triplo.", amount: 659, image: img("panelas-tramontina-solar") },
   { id: "xicaras-cha", name: "Jogo de Xícaras de Chá em Porcelana", description: "Tardes tranquilas em casa.", amount: 650, image: img("xicaras-cha") },
   { id: "xicaras-pires-cristal", name: "Xícaras com Pires em Cristal", description: "Para receber com sofisticação.", amount: 600, image: img("xicaras-pires-cristal") },
-  { id: "airfryer-electrolux", name: "Air Fryer Oven Electrolux Rita Lobo 12L", description: "Refeições rápidas e saborosas.", amount: 598, image: img("airfryer-electrolux") },
   { id: "faqueiro-bronze", name: "Faqueiro Inox Bronze 36 Peças", description: "Design clássico para nossa mesa.", amount: 588, image: img("faqueiro-bronze") },
   { id: "forno-best", name: "Forno Elétrico Plus 220v Best", description: "Para os assados de domingo.", amount: 584, image: img("forno-best") },
   { id: "airfryer-mondial", name: "Air Fryer Forno Mondial 12L", description: "Praticidade no preparo diário.", amount: 549, image: img("airfryer-mondial") },
