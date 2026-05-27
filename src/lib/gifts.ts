@@ -10,10 +10,10 @@ export interface GiftItem {
 const img = (id: string) => `/gifts/${id}.jpg`;
 
 export const gifts: GiftItem[] = [
+  { id: "airfryer-basica", name: "Air Fryer", description: "Indispensável na nova cozinha.", amount: 400, image: img("airfryer-basica") },
   { id: "tv-samsung", name: "Smart TV Samsung Crystal UHD 65\"", description: "Para as noites de cinema no nosso lar.", amount: 2500, image: img("tv-samsung") },
   { id: "ar-split", name: "Ar-Condicionado Split Inverter 12.000 BTUs", description: "Conforto em todas as estações.", amount: 2500, image: img("ar-split") },
   { id: "robo-aspirador", name: "Robô Aspirador Inteligente", description: "Praticidade para o dia a dia do casal.", amount: 3500, image: img("robo-aspirador") },
-  { id: "lava-seca", name: "Máquina Lava e Seca", description: "Para cuidar da nossa nova rotina.", amount: 3000, image: img("lava-seca") },
   { id: "cervejeira", name: "Cervejeira Vertical", description: "Brindes gelados com quem amamos.", amount: 2500, image: img("cervejeira") },
   { id: "adega", name: "Adega Climatizada", description: "Para guardar os vinhos das comemorações.", amount: 2000, image: img("adega") },
   { id: "cooktop-inducao", name: "Cooktop de Indução", description: "Tecnologia e elegância na cozinha.", amount: 2800, image: img("cooktop-inducao") },
