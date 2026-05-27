@@ -29,12 +29,11 @@ export function generatePixPayload({
   name,
   city,
   amount,
-  description,
-  txid = "***",
 }: PixOptions): string {
-  const merchantAccount = tlv("00", "br.gov.bcb.pix") +
-    tlv("01", key) +
-    (description ? tlv("02", description.slice(0, 72)) : "");
+  const merchantAccount = tlv("00", "br.gov.bcb.pix") + tlv("01", key);
+
+  const sanitize = (s: string) =>
+    s.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^A-Za-z0-9 ]/g, "").toUpperCase();
 
   const payload =
     tlv("00", "01") +
@@ -43,9 +42,9 @@ export function generatePixPayload({
     tlv("53", "986") +
     (amount ? tlv("54", amount.toFixed(2)) : "") +
     tlv("58", "BR") +
-    tlv("59", name.slice(0, 25)) +
-    tlv("60", city.slice(0, 15)) +
-    tlv("62", tlv("05", txid));
+    tlv("59", sanitize(name).slice(0, 25)) +
+    tlv("60", sanitize(city).slice(0, 15)) +
+    tlv("62", tlv("05", "***"));
 
   const toCrc = payload + "6304";
   return toCrc + crc16(toCrc);

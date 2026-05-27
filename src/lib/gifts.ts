@@ -13,7 +13,7 @@ export const gifts: GiftItem[] = [
   { id: "airfryer-electrolux", name: "Air Fryer Oven Electrolux Rita Lobo 12L", description: "Refeições rápidas e saborosas.", amount: 598, image: img("airfryer-electrolux") },
   { id: "tv-samsung", name: "Smart TV Samsung Crystal UHD 65\"", description: "Para as noites de cinema no nosso lar.", amount: 2500, image: img("tv-samsung") },
   { id: "ar-split", name: "Ar-Condicionado Split Inverter 12.000 BTUs", description: "Conforto em todas as estações.", amount: 2500, image: img("ar-split") },
-  { id: "robo-aspirador", name: "Robô Aspirador Inteligente", description: "Praticidade para o dia a dia do casal.", amount: 3500, image: img("robo-aspirador") },
+  { id: "robo-aspirador", name: "Robô Aspirador Inteligente", description: "Praticidade para o dia a dia do casal.", amount: 1150, image: img("robo-aspirador") },
   { id: "cervejeira", name: "Cervejeira Vertical", description: "Brindes gelados com quem amamos.", amount: 2500, image: img("cervejeira") },
   { id: "adega", name: "Adega Climatizada", description: "Para guardar os vinhos das comemorações.", amount: 2000, image: img("adega") },
   { id: "cooktop-inducao", name: "Cooktop de Indução", description: "Tecnologia e elegância na cozinha.", amount: 2800, image: img("cooktop-inducao") },
