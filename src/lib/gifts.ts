@@ -28,7 +28,6 @@ export const gifts: GiftItem[] = [
   { id: "copos-cristal", name: "Conjunto de Copos de Cristal", description: "Brilho na mesa em cada ocasião.", amount: 500, image: img("copos-cristal") },
   { id: "panelas-antiaderente", name: "Jogo de Panelas Antiaderente", description: "Praticidade e durabilidade.", amount: 500, image: img("panelas-antiaderente") },
   { id: "edredom", name: "Edredom Sofisticado", description: "Aconchego para as noites a dois.", amount: 450, image: img("edredom") },
-  { id: "airfryer-basica", name: "Air Fryer", description: "Indispensável na nova cozinha.", amount: 400, image: img("airfryer-basica") },
   { id: "panelas-pratic-cook", name: "Panelas Pratic Cook Crema Cerâmica 10 Peças", description: "Charme e função juntos.", amount: 395, image: img("panelas-pratic-cook") },
   { id: "faqueiro-laguna", name: "Faqueiro Tramontina Laguna 91 Peças", description: "Para reunir toda a família.", amount: 388, image: img("faqueiro-laguna") },
   { id: "faqueiro-elegante", name: "Faqueiro Elegante", description: "Detalhes que fazem diferença.", amount: 350, image: img("faqueiro-elegante") },
