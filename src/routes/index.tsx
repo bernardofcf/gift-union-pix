@@ -6,6 +6,8 @@ import couple1 from "@/assets/couple-1.jpg";
 import couple2 from "@/assets/couple-2.jpg";
 import couple3 from "@/assets/couple-3.jpg";
 import couple4 from "@/assets/couple-4.jpg";
+import couple5 from "@/assets/couple-5.jpg";
+import couple6 from "@/assets/couple-6.jpg";
 import { gifts, type GiftItem } from "@/lib/gifts";
 import { GiftDialog } from "@/components/GiftDialog";
 
@@ -100,23 +102,20 @@ function Index() {
             Nossa História
           </h2>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
-          <div className="md:row-span-2 overflow-hidden rounded-2xl aspect-[3/4] md:aspect-auto">
-            <img src={couple1} alt="Maria Theresa e Rodrigo no jardim" loading="lazy" width={1024} height={1280}
-              className="h-full w-full object-cover transition-transform duration-700 hover:scale-105" />
-          </div>
-          <div className="col-span-2 overflow-hidden rounded-2xl aspect-[5/4]">
-            <img src={couple2} alt="O casal abraçado ao pôr do sol" loading="lazy" width={1280} height={1024}
-              className="h-full w-full object-cover transition-transform duration-700 hover:scale-105" />
-          </div>
-          <div className="overflow-hidden rounded-2xl aspect-square">
-            <img src={couple3} alt="Mãos com aliança e eucalipto" loading="lazy" width={1024} height={1024}
-              className="h-full w-full object-cover transition-transform duration-700 hover:scale-105" />
-          </div>
-          <div className="col-span-2 md:col-span-3 overflow-hidden rounded-2xl aspect-[16/9]">
-            <img src={couple4} alt="Maria Theresa e Rodrigo sorrindo" loading="lazy" width={1024} height={1280}
-              className="h-full w-full object-cover transition-transform duration-700 hover:scale-105" />
-          </div>
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
+          {[
+            { src: couple1, alt: "Maria Theresa e Rodrigo - retrato em preto e branco" },
+            { src: couple2, alt: "Maria Theresa e Rodrigo - ensaio claro" },
+            { src: couple3, alt: "Maria Theresa e Rodrigo - momento íntimo" },
+            { src: couple4, alt: "Maria Theresa e Rodrigo - look social" },
+            { src: couple5, alt: "Maria Theresa e Rodrigo - sob a árvore" },
+            { src: couple6, alt: "Maria Theresa e Rodrigo - de mãos dadas" },
+          ].map((p, i) => (
+            <div key={i} className="overflow-hidden rounded-2xl aspect-[4/5] bg-accent/20">
+              <img src={p.src} alt={p.alt} loading="lazy" width={1024} height={1280}
+                className="h-full w-full object-cover transition-transform duration-700 hover:scale-105" />
+            </div>
+          ))}
         </div>
       </section>
 

@@ -10,10 +10,10 @@ export interface GiftItem {
 const img = (id: string) => `/gifts/${id}.jpg`;
 
 export const gifts: GiftItem[] = [
+  { id: "airfryer-basica", name: "Air Fryer", description: "Indispensável na nova cozinha.", amount: 400, image: img("airfryer-basica") },
   { id: "tv-samsung", name: "Smart TV Samsung Crystal UHD 65\"", description: "Para as noites de cinema no nosso lar.", amount: 2500, image: img("tv-samsung") },
   { id: "ar-split", name: "Ar-Condicionado Split Inverter 12.000 BTUs", description: "Conforto em todas as estações.", amount: 2500, image: img("ar-split") },
   { id: "robo-aspirador", name: "Robô Aspirador Inteligente", description: "Praticidade para o dia a dia do casal.", amount: 3500, image: img("robo-aspirador") },
-  { id: "lava-seca", name: "Máquina Lava e Seca", description: "Para cuidar da nossa nova rotina.", amount: 3000, image: img("lava-seca") },
   { id: "cervejeira", name: "Cervejeira Vertical", description: "Brindes gelados com quem amamos.", amount: 2500, image: img("cervejeira") },
   { id: "adega", name: "Adega Climatizada", description: "Para guardar os vinhos das comemorações.", amount: 2000, image: img("adega") },
   { id: "cooktop-inducao", name: "Cooktop de Indução", description: "Tecnologia e elegância na cozinha.", amount: 2800, image: img("cooktop-inducao") },
@@ -28,7 +28,6 @@ export const gifts: GiftItem[] = [
   { id: "copos-cristal", name: "Conjunto de Copos de Cristal", description: "Brilho na mesa em cada ocasião.", amount: 500, image: img("copos-cristal") },
   { id: "panelas-antiaderente", name: "Jogo de Panelas Antiaderente", description: "Praticidade e durabilidade.", amount: 500, image: img("panelas-antiaderente") },
   { id: "edredom", name: "Edredom Sofisticado", description: "Aconchego para as noites a dois.", amount: 450, image: img("edredom") },
-  { id: "airfryer-basica", name: "Air Fryer", description: "Indispensável na nova cozinha.", amount: 400, image: img("airfryer-basica") },
   { id: "panelas-pratic-cook", name: "Panelas Pratic Cook Crema Cerâmica 10 Peças", description: "Charme e função juntos.", amount: 395, image: img("panelas-pratic-cook") },
   { id: "faqueiro-laguna", name: "Faqueiro Tramontina Laguna 91 Peças", description: "Para reunir toda a família.", amount: 388, image: img("faqueiro-laguna") },
   { id: "faqueiro-elegante", name: "Faqueiro Elegante", description: "Detalhes que fazem diferença.", amount: 350, image: img("faqueiro-elegante") },
