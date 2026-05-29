@@ -10,6 +10,7 @@ import couple5 from "@/assets/couple-5.jpg";
 import couple6 from "@/assets/couple-6.jpg";
 import { gifts, type GiftItem } from "@/lib/gifts";
 import { GiftDialog } from "@/components/GiftDialog";
+import { Countdown } from "@/components/Countdown";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -51,9 +52,12 @@ function Index() {
 
         <div className="mx-auto max-w-4xl px-6 pt-24 pb-32 text-center">
           <p className="text-sm uppercase tracking-[0.3em] text-sage-deep/80">
-            Casamento · 2026
+            Casamento · 25 de Julho de 2026
           </p>
-          <h1 className="mt-6 font-display text-6xl md:text-8xl leading-[0.95] text-sage-deep">
+          <div className="mt-8 flex justify-center">
+            <Countdown />
+          </div>
+          <h1 className="mt-8 font-display text-6xl md:text-8xl leading-[0.95] text-sage-deep">
             Maria Theresa
             <span className="block italic text-4xl md:text-5xl my-3 text-accent-foreground/70">&</span>
             Rodrigo
