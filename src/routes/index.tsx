@@ -11,6 +11,7 @@ import couple6 from "@/assets/couple-6.jpg";
 import { gifts, type GiftItem } from "@/lib/gifts";
 import { GiftDialog } from "@/components/GiftDialog";
 import { Countdown } from "@/components/Countdown";
+import bgEucalipto from "@/assets/bg-eucalipto.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -36,7 +37,16 @@ function Index() {
   const [selected, setSelected] = useState<GiftItem | null>(null);
 
   return (
-    <div className="min-h-screen bg-background">
+    <div
+      className="min-h-screen"
+      style={{
+        backgroundImage: `url(${bgEucalipto})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center top",
+        backgroundAttachment: "fixed",
+        backgroundRepeat: "no-repeat",
+      }}
+    >
       {/* Hero */}
       <header className="relative overflow-hidden">
         <div className="absolute inset-0 -z-10">
