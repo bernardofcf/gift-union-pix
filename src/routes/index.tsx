@@ -11,7 +11,7 @@ import couple6 from "@/assets/couple-6.jpg";
 import { gifts, type GiftItem } from "@/lib/gifts";
 import { GiftDialog } from "@/components/GiftDialog";
 import { Countdown } from "@/components/Countdown";
-import bgEucalipto from "@/assets/bg-leaves-pattern.jpg";
+import leafBranch from "@/assets/leaf-branch.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -37,15 +37,20 @@ function Index() {
   const [selected, setSelected] = useState<GiftItem | null>(null);
 
   return (
-    <div
-      className="min-h-screen"
-      style={{
-        backgroundImage: `url(${bgEucalipto})`,
-        backgroundSize: "320px auto",
-        backgroundRepeat: "repeat",
-        backgroundColor: "hsl(var(--background))",
-      }}
-    >
+    <div className="min-h-screen bg-background relative overflow-hidden">
+      {/* Folhas decorativas laterais */}
+      <img
+        src={leafBranch}
+        alt=""
+        aria-hidden="true"
+        className="pointer-events-none select-none absolute -top-10 -left-24 w-64 md:w-80 opacity-60 -rotate-12"
+      />
+      <img
+        src={leafBranch}
+        alt=""
+        aria-hidden="true"
+        className="pointer-events-none select-none absolute top-[45%] -right-32 w-72 md:w-96 opacity-50 rotate-180 scale-y-[-1]"
+      />
       {/* Hero */}
       <header className="relative overflow-hidden">
         <div className="absolute inset-0 -z-10">
