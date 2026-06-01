@@ -38,7 +38,7 @@ function Index() {
 
   return (
     <div
-      className="min-h-screen bg-background"
+      className="min-h-screen"
       style={{
         backgroundImage: `url(${bgEucalipto})`,
         backgroundSize: "cover",
