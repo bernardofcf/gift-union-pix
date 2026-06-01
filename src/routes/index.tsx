@@ -11,7 +11,7 @@ import couple6 from "@/assets/couple-6.jpg";
 import { gifts, type GiftItem } from "@/lib/gifts";
 import { GiftDialog } from "@/components/GiftDialog";
 import { Countdown } from "@/components/Countdown";
-import bgEucalipto from "@/assets/bg-eucalipto.jpg";
+import bgEucalipto from "@/assets/bg-leaves-pattern.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -41,10 +41,9 @@ function Index() {
       className="min-h-screen"
       style={{
         backgroundImage: `url(${bgEucalipto})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center top",
-        backgroundAttachment: "fixed",
-        backgroundRepeat: "no-repeat",
+        backgroundSize: "320px auto",
+        backgroundRepeat: "repeat",
+        backgroundColor: "hsl(var(--background))",
       }}
     >
       {/* Hero */}
