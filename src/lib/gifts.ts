@@ -37,7 +37,7 @@ export const gifts: GiftItem[] = [
   { id: "aparelho-jantar", name: "Aparelho de Jantar Completo", description: "Para receber com elegância.", amount: 300, image: img("aparelho-jantar") },
   { id: "pressao-brinox-vanilla", name: "Panela de Pressão Indução Vanilla 5,4L Brinox", description: "Refeições rápidas e seguras.", amount: 279, image: img("pressao-brinox-vanilla") },
   { id: "panelas-turim", name: "Aparelho de Jantar 30 Peças", description: "Porcelana branca para receber com elegância.", amount: 259, image: img("panelas-turim") },
-  { id: "manta", name: "Manta Decorativa", description: "Aconchego na sala do casal.", amount: 250, image: img("manta") },
+  { id: "cortina-elegante", name: "Cortina Elegante", description: "Leveza e charme para as janelas do nosso lar.", amount: 400, image: img("cortina-elegante") },
   { id: "talheres-inox", name: "Kit Banheiro Completo", description: "Conjunto cerâmico em tons neutros para o lavabo.", amount: 250, image: img("talheres-inox") },
   { id: "tapete", name: "Tapete Decorativo", description: "Calor e charme para o lar.", amount: 250, image: img("tapete") },
   { id: "processador", name: "Processador de Alimentos", description: "Praticidade na cozinha.", amount: 250, image: img("processador") },
