@@ -2,12 +2,12 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import { Heart } from "lucide-react";
 import heroImage from "@/assets/hero.jpg";
-import couple1 from "@/assets/couple-1.jpg";
-import couple2 from "@/assets/couple-2.jpg";
-import couple3 from "@/assets/couple-3.jpg";
-import couple4 from "@/assets/couple-4.jpg";
-import couple5 from "@/assets/couple-5.jpg";
-import couple6 from "@/assets/couple-6.jpg";
+import couple1 from "@/assets/couple-8.png.asset.json";
+import couple2 from "@/assets/couple-9.png.asset.json";
+import couple3 from "@/assets/couple-10.png.asset.json";
+import couple4 from "@/assets/couple-11.png.asset.json";
+import couple5 from "@/assets/couple-12.png.asset.json";
+import couple6 from "@/assets/couple-13.png.asset.json";
 import { gifts, type GiftItem } from "@/lib/gifts";
 import { GiftDialog } from "@/components/GiftDialog";
 import { Countdown } from "@/components/Countdown";
@@ -130,7 +130,7 @@ function Index() {
             { src: couple6, alt: "Maria Theresa e Rodrigo - de mãos dadas" },
           ].map((p, i) => (
             <div key={i} className="overflow-hidden rounded-2xl aspect-[4/5] bg-accent/20">
-              <img src={p.src} alt={p.alt} loading="lazy" width={1024} height={1280}
+              <img src={p.src.url} alt={p.alt} loading="lazy" width={1024} height={1280}
                 className="h-full w-full object-cover transition-transform duration-700 hover:scale-105" />
             </div>
           ))}
