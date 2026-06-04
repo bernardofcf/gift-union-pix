@@ -130,7 +130,7 @@ function Index() {
             { src: couple6, alt: "Maria Theresa e Rodrigo - de mãos dadas" },
           ].map((p, i) => (
             <div key={i} className="overflow-hidden rounded-2xl aspect-[4/5] bg-accent/20">
-              <img src={p.src} alt={p.alt} loading="lazy" width={1024} height={1280}
+              <img src={p.src.url} alt={p.alt} loading="lazy" width={1024} height={1280}
                 className="h-full w-full object-cover transition-transform duration-700 hover:scale-105" />
             </div>
           ))}
