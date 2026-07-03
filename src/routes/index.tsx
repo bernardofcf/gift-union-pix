@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
-import { Heart } from "lucide-react";
+import { Heart, Church, Wine, Calendar, Clock, MapPin } from "lucide-react";
 import heroImage from "@/assets/hero.jpg";
 const couple1 = { url: "/couple/couple-8.png" };
 const couple2 = { url: "/couple/couple-9.png" };
@@ -134,6 +134,98 @@ function Index() {
                 className="h-full w-full object-cover transition-transform duration-700 hover:scale-105" />
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* Local e Horário */}
+      <section className="mx-auto max-w-5xl px-6 pb-24">
+        <div className="text-center mb-12">
+          <p className="text-sm uppercase tracking-[0.3em] text-sage-deep/70">O Grande Dia</p>
+          <h2 className="mt-3 font-display text-4xl md:text-5xl text-sage-deep">
+            Quando & Onde
+          </h2>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {/* Cerimônia */}
+          <div className="rounded-3xl border border-border bg-card p-8 md:p-10 shadow-[var(--shadow-card)]">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-sage/20 text-sage-deep">
+                <Church className="h-5 w-5" />
+              </div>
+              <p className="text-sm uppercase tracking-[0.3em] text-sage-deep/70">A Cerimônia</p>
+            </div>
+
+            <h3 className="font-display text-3xl md:text-4xl text-sage-deep">Igreja Matriz</h3>
+            <p className="mt-1 text-muted-foreground">Raul Soares · MG</p>
+
+            <div className="mt-8 space-y-4">
+              <div className="flex items-center gap-4 rounded-2xl bg-cream/60 p-4">
+                <Calendar className="h-5 w-5 text-sage-deep/70" />
+                <div>
+                  <p className="text-xs uppercase tracking-[0.2em] text-sage-deep/60">Data</p>
+                  <p className="font-display text-lg text-sage-deep">Sábado, 25 de Julho de 2026</p>
+                </div>
+              </div>
+              <div className="flex items-center gap-4 rounded-2xl bg-cream/60 p-4">
+                <Clock className="h-5 w-5 text-sage-deep/70" />
+                <div>
+                  <p className="text-xs uppercase tracking-[0.2em] text-sage-deep/60">Horário</p>
+                  <p className="font-display text-lg text-sage-deep">16:00</p>
+                </div>
+              </div>
+            </div>
+
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=Igreja+Matriz+Raul+Soares+MG"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-8 inline-flex w-full items-center justify-center gap-2 rounded-full bg-sage-deep px-6 py-4 text-sm font-medium text-cream transition-colors hover:bg-sage-deep/90"
+            >
+              <MapPin className="h-4 w-4" />
+              Ver no Mapa
+            </a>
+          </div>
+
+          {/* Festa */}
+          <div className="rounded-3xl border border-border bg-card p-8 md:p-10 shadow-[var(--shadow-card)]">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-sage/20 text-sage-deep">
+                <Wine className="h-5 w-5" />
+              </div>
+              <p className="text-sm uppercase tracking-[0.3em] text-sage-deep/70">A Festa</p>
+            </div>
+
+            <h3 className="font-display text-3xl md:text-4xl text-sage-deep">Chácara Ypê</h3>
+            <p className="mt-1 text-muted-foreground">Raul Soares · MG</p>
+
+            <div className="mt-8 space-y-4">
+              <div className="flex items-center gap-4 rounded-2xl bg-cream/60 p-4">
+                <Calendar className="h-5 w-5 text-sage-deep/70" />
+                <div>
+                  <p className="text-xs uppercase tracking-[0.2em] text-sage-deep/60">Data</p>
+                  <p className="font-display text-lg text-sage-deep">Sábado, 25 de Julho de 2026</p>
+                </div>
+              </div>
+              <div className="flex items-center gap-4 rounded-2xl bg-cream/60 p-4">
+                <Clock className="h-5 w-5 text-sage-deep/70" />
+                <div>
+                  <p className="text-xs uppercase tracking-[0.2em] text-sage-deep/60">Horário</p>
+                  <p className="font-display text-lg text-sage-deep">Pós cerimônia</p>
+                </div>
+              </div>
+            </div>
+
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=Chácara+Ypê+Raul+Soares+MG"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-8 inline-flex w-full items-center justify-center gap-2 rounded-full bg-sage-deep px-6 py-4 text-sm font-medium text-cream transition-colors hover:bg-sage-deep/90"
+            >
+              <MapPin className="h-4 w-4" />
+              Ver no Mapa
+            </a>
+          </div>
         </div>
       </section>
 
