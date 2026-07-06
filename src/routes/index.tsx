@@ -211,7 +211,7 @@ function Index() {
                 <Clock className="h-5 w-5 text-sage-deep/70" />
                 <div>
                   <p className="text-xs uppercase tracking-[0.2em] text-sage-deep/60">Horário</p>
-                  <p className="font-display text-lg text-sage-deep">Pós cerimônia</p>
+                  <p className="font-display text-lg text-sage-deep"> - </p>
                 </div>
               </div>
             </div>
