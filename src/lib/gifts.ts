@@ -14,7 +14,7 @@ export const gifts: GiftItem[] = [
   { id: "ar-split", name: "Ar-Condicionado Split Inverter 12.000 BTUs", description: "Conforto em todas as estações.", amount: 2500, image: img("ar-split") },
   { id: "cervejeira", name: "Cervejeira Vertical", description: "Brindes gelados com quem amamos.", amount: 2000, image: img("cervejeira") },
   { id: "cooktop-inducao", name: "Cooktop de Indução", description: "Tecnologia e elegância na cozinha.", amount: 1800, image: img("cooktop-inducao") },
-  { id: "churrasqueira-parrilla", name: "Churrasqueira Assador Parrilla Inox Gás GLP Portátil", description: "Para os encontros ao ar livre.", amount: 1439.99, image: img("churrasqueira-parrilla") },
+  { id: "churrasqueira-parrilla", name: "Churrasqueira Assador Parrilla Inox Gás GLP Portátil", description: "Para os encontros ao ar livre.", amount: 1500, image: img("churrasqueira-parrilla") },
   { id: "robo-aspirador", name: "Robô Aspirador Inteligente", description: "Praticidade para o dia a dia do casal.", amount: 1300, image: img("robo-aspirador") },
   { id: "cafeteira-espresso", name: "Cafeteira Espresso", description: "Cafés especiais todas as manhãs.", amount: 1100, image: img("cafeteira-espresso") },
   { id: "panelas-style-cook", name: "Conjunto de Panelas Style Cook 10 Peças", description: "Cozinhar virou ritual com elas.", amount: 900, image: img("panelas-style-cook") },
